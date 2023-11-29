@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/system";
 import {
- 
+
   TextField,
   Button,
   Container,
@@ -10,18 +10,18 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { ForkLeft, SearchRounded } from "@mui/icons-material";
- 
+
 import Client from "./Clients/Index";
 import "./Index.scss";
 import { useState } from "react";
 
- 
+
 
 function Home() {
-   
-  
 
-   
+
+
+
 
   return (
     <div className="hm-pg">
@@ -29,7 +29,10 @@ function Home() {
       {/* <img src="/assets/image/background.webp" alt="bg" className="hm-img" /> */}
       <div className="home">
         <Box className="homebox">
-           <Typography sx={{fontSize: 64, alignItems: 'flex-start', width: 'fullWidth'}}>Explore your dream home</Typography>
+          <Typography sx={{ fontSize: 60, alignItems: 'flex-start', width: 'fullWidth' }}>Explore your dream home</Typography>
+          <Typography sx={{fontSize: 20}}>Embark on captivating tours to discover the
+            perfect residence for you and your family.
+          </Typography>
           <Box
             sx={{
               width: "100%",
@@ -37,9 +40,9 @@ function Home() {
               height: "56px",
             }}
           >
-             
-              
-             
+
+
+
             <TextField
               variant="filled"
               label={<SearchRounded />}
@@ -50,19 +53,19 @@ function Home() {
               }}
               fullWidth
             />
-            
+
           </Box>
-          
+
         </Box>
         <div className="hmimg">
 
-        <img src="/assets/image/background.webp" alt="bg" className="hm-img"  style={{marginRight: "5rem"}}/>
+          <img src="/assets/image/background.webp" alt="bg" className="hm-img" style={{ marginRight: "5rem" }} />
         </div>
       </div>
 
       <Container maxWidth="xl">
         <Container maxWidth="xl">
-          <Typography variant="h5" component="h1" align="center" marginY={1} style={{color: "black"}}>
+          <Typography variant="h5" component="h1" align="center" marginY={1} style={{ color: "black" }}>
             Looking for rental apartments
           </Typography>
           <Client />

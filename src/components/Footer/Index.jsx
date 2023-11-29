@@ -22,7 +22,7 @@ export default function Footer() {
       primary: {
         main: "#5a48a7",
       },
-      secondary: pink,
+      // secondary: pink,
     },
   });
   return (
@@ -34,8 +34,8 @@ export default function Footer() {
           position: "relative",
           bottom: "0px",
           left: "0px",
-          background: "#241758",
-          color: "#FCD6C5",
+          background: "rgb(21, 67, 96)",
+          color: "white",
           margin: "0px 0px 0px 0px",
         }}
       >
@@ -71,14 +71,14 @@ export default function Footer() {
                 sx={{
                   margin: "10px 0px",
                   width: "50%",
-                  color: "#FCD6C5",
+                  color: "white",
                   padding: "2px 5px",
                 }}
                 type="email"
                 startAdornment={
                   <EmailIcon
                     sx={{
-                      color: "#FCD6C5",
+                      color: "white",
                       paddingRight: "8px",
                     }}
                   />
@@ -100,13 +100,13 @@ export default function Footer() {
               <Input
                 sx={{
                   padding: "2px 5px",
-                  color: "#FCD6C5",
+                  color: "white",
                 }}
                 type="text"
                 startAdornment={
                   <MessageIcon
                     sx={{
-                      color: "#FCD6C5",
+                      color: "white",
                       paddingRight: "8px",
                     }}
                   />
@@ -132,7 +132,7 @@ export default function Footer() {
         <Container
           sx={{
             height: "60px",
-            backgroundColor: "#110835",
+            backgroundColor: "rgb(21, 67, 96)",
             margin: "0px",
             padding: "auto",
             display: "flex",
@@ -142,7 +142,7 @@ export default function Footer() {
           maxWidth="100%"
         >
           <Typography align="center">
-            Made with ❤️ by monu;
+            Made by monu;
           </Typography>
         </Container>
       </Box>

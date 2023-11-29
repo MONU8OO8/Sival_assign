@@ -6,7 +6,7 @@ import {
   CardMedia,
   Typography,
   CardHeader,
-  Avatar,
+ 
   CardActions,
   Button,
 } from "@mui/material";
