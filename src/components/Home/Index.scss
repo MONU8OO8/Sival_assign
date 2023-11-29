@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .hm-pg {
+    width: 100%;
+    // display: ;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: white;
+  }
+  
+//   .hm-pg::before {
+//     content: '';
+//     position: absolute;
+//     left: 0px;
+//     width: 100%;
+//     height: 95vh;
+//     // the below background url code doesn't work properly
+//     // background: url('/public/assets/image/background-small.jpg') no-repeat center center/cover;
+//     background-color: white;
+//     opacity: .7;
+// }
+
+.hm-img {
+    // position: absolute;
+    border: 4px solid white;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    opacity: 0.9;
+    
+    // align-items: flex-end;
+  }
+  .hmimg{
+    
+    width: 35%;
+    left: 0;
+    width: 30%;
+    height: 65vh;
+    opacity: 0.9;
+  }
+  .home {
+    height: 85vh;
+    display: flex;
+    flex-wrap:  wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    width: 95%;
+    color: bisque;
+    // align-items: center;
+    background-color: rgb(21, 67, 96);
+    z-index: inherit;
+  }
+  
+  .homebox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .homebox {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .homebox {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 830px) {
+    .homebox {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 456px) {
+    .homebox {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 356px) {
+    .homebox {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .homebox {
+      width: 100%;
+    }
+  }
+  
