@@ -65,7 +65,10 @@ textarea::placeholder {
 }
 
 .note-input__title {
-  font-weight: bold;
+  /* font-weight: bold; */
+  width: 100%;
+  background: white;
+  color: black;
 }
 
 .note-input__title__char-limit {
@@ -76,6 +79,7 @@ textarea::placeholder {
 
 .note-input__body {
   min-height: 175px;
+  color: black;
 }
 
 .note-input button {
@@ -97,6 +101,7 @@ textarea::placeholder {
   grid-template-rows: minmax(min-content, max-content);
   gap: 16px;
   margin-bottom: 48px;
+  color: black;
 }
 
 .notes-list__empty-message {
@@ -152,7 +157,7 @@ textarea::placeholder {
   align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  background-color: #fff;
+  background-color: black;
   border: 1px #aaa solid;
   width: 100%;
 }

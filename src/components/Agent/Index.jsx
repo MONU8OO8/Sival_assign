@@ -21,7 +21,7 @@ const Agent = () => {
   }, [query, notes]);
 
   return (
-    <div className="agent-page" style={{ margin: "40px 0px", backgroundColor: "black" }}>
+    <div className="agent-page" style={{ margin: "40px 0px" }}>
        <Header search={query} setQuery={setQuery} />
       <Body
         notesAll={notesAll}

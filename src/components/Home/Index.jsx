@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
+import Input from "../Input";
 import {
 
   TextField,
@@ -13,13 +14,31 @@ import { ForkLeft, SearchRounded } from "@mui/icons-material";
 
 import Client from "./Clients/Index";
 import "./Index.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Body from "../Body";
+import Header from "../Header";
+import { getInitialData } from "../../utils";
+import List from "../List";
 
 
 
-function Home() {
 
+function Home( ) {
 
+  const [query, setQuery] = useState("");
+  const [searchNotes, setSearchNotes] = useState([]);
+  const [notes, setNotes] = useState(getInitialData());
+
+  const notesAll = (searchNotes || notes).filter((note) => !note.archived);
+  const notesArchive = (searchNotes || notes).filter((note) => note.archived);
+
+  useEffect(() => {
+    setSearchNotes(
+      notes.filter((note) =>
+        note.title.toLowerCase().includes(query.toLowerCase())
+      )
+    );
+  }, [query, notes]);
 
 
 
@@ -43,16 +62,26 @@ function Home() {
 
 
 
-            <TextField
+            {/* <Input
               variant="filled"
+              value={query}
+          onChange={setQuery}
               label={<SearchRounded />}
-              sx={{
+              style={{
                 alignContent: "start",
                 height: "56px",
                 backgroundColor: "#ffff",
               }}
               fullWidth
-            />
+            /> */}
+            <Input
+          value={query}
+          onChange={setQuery}
+          type="search"
+          id="search_note"
+          name="search_note"
+          placeholder="Find Notes..."
+        />
 
           </Box>
 
@@ -65,6 +94,12 @@ function Home() {
 
       <Container maxWidth="xl">
         <Container maxWidth="xl">
+          
+          {/* <div style={{backgroundColor:"black"}}> */}
+          <div>
+
+          <List label="All Notes" setNotes={setNotes} notes={notesAll} />
+          </div>
           <Typography variant="h5" component="h1" align="center" marginY={1} style={{ color: "black" }}>
             Looking for rental apartments
           </Typography>

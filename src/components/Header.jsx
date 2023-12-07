@@ -4,7 +4,7 @@ import Input from "./Input";
 const Header = ({ search, setQuery }) => {
   return (
     <div className="note-app__header">
-      <h1>Notes App</h1>
+      <h1 style={{color: "black"}}>Notes App</h1>
       <div className="note-search">
         <Input
           value={search}

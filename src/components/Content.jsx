@@ -28,7 +28,7 @@ const Content = ({ setNotes }) => {
 
   return (
     <div className="note-input">
-      <h2>New Notes</h2>
+      <h2 style={{color: "black"}}>New Notes</h2>
       <form onSubmit={handleSubmit}>
         <p className="note-input__title__char-limit">
           Characters left: {50 - title.length}
